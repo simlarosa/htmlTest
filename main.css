@@ -5,7 +5,7 @@ body {
   margin: 0;
 }
 
-p {
+p, blockquote {
   font-size: .9em;
   line-height: 1.5em;
 }
@@ -19,11 +19,12 @@ ul {
 
 .container {
   text-align: center;
+  padding: .8em;
 }
 
 .logo {
   width: 60px;
-  padding: 10px 40px;
+  padding: 10px;
 }
 
 header {
@@ -32,9 +33,19 @@ header {
   height: 75px;
 }
 
+.menu2 {
+  width: 25px;
+  margin-top: 60%;
+  padding-right: 10px;
+}
+
 .menu {
   display: flex;
   padding: 25px 80px;
+}
+
+.hide-mobile {
+  display: none;
 }
 
 .menu li {
@@ -64,6 +75,7 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
 
+  text-align: center;
   top:0;
   bottom:0;
   width: 100%;
@@ -92,4 +104,15 @@ h1 {
 .head p {
   font-size: 1.4em;
   margin: 0;
+}
+
+.orange-container {
+  width: 100%;
+  background: #ffa500;
+  color: #fff;
+  padding: 4em 0 2em;
+}
+
+.icon {
+  width: 100px;
 }
