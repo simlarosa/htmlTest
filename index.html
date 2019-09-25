@@ -14,10 +14,13 @@
 
       <nav>
           <a href="#" class="hide-desktop">
-            <img src="assets/ham.png" alt="toggle menu" class="menu2">
+            <img src="assets/ham.png" alt="toggle menu" class="menu2" id="menu">
           </a>
 
-          <ul class="menu hide-mobile">
+          <ul class="menu show-desktop hide-mobile" id="nav">
+            <li id="exit" class="exit-btn hide-desktop">
+              <img src="assets/X.png" alt="exit menu">
+            </li>
             <li><a href="#" class="menu-text">Home</a></li>
             <li><a href="#" class="menu-text">About Us</a></li>
             <li><a href="#" class="menu-text">Services</a></li>
@@ -32,8 +35,7 @@
     <section class="slider">
         <div class="head">
           <h1>Travel in a new way</h1>
-          <p class="sub-head">Make new friend and discover a new way of travelling</p>
-          <!--  <img src="assets/scroll-down.svg" alt="scroll down" class="scroll hidden "> -->
+          <p class="sub-head">Make new friend and discover <br>a new way of travelling</p>
         </div>
       </section>
 
@@ -42,15 +44,15 @@
           <ul>
             <li>
               <img src="https://image.flaticon.com/icons/png/512/97/97895.png" alt="icon1" class="icon">
-              <p>Lorem ipsum, dolor sit amet, conseteru</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dapibus eu nulla quis viverra. Vestibulum bibendum dictum turpis, vel iaculis dui accumsan sed. Maecenas malesuada vel dui ac consequat. Duis pellentesque magna ac tincidunt dapibus. Duis sagittis, lorem eget lacinia placerat, erat quam pellentesque est</p>
             </li>
             <li>
               <img src="http://simpleicon.com/wp-content/uploads/rocket.png" alt="icon2" class="icon">
-              <p>Lorem ipsum, dolor sit amet, conseteru</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dapibus eu nulla quis viverra. Vestibulum bibendum dictum turpis, vel iaculis dui accumsan sed. Maecenas malesuada vel dui ac consequat. Duis pellentesque magna ac tincidunt dapibus. Duis sagittis, lorem eget lacinia placerat, erat quam pellentesque est</p>
             </li>
             <li>
               <img src="http://simpleicon.com/wp-content/uploads/flag.png" alt="icon3" class="icon">
-              <p>Lorem ipsum, dolor sit amet, conseteru</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dapibus eu nulla quis viverra. Vestibulum bibendum dictum turpis, vel iaculis dui accumsan sed. Maecenas malesuada vel dui ac consequat. Duis pellentesque magna ac tincidunt dapibus. Duis sagittis, lorem eget lacinia placerat, erat quam pellentesque est</p>
             </li>
           </ul>
         </div>
@@ -96,6 +98,25 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      
+      var menu = document.getElementById('menu');
+      var nav = document.getElementById('nav');
+      var exit = document.getElementById('exit');
+      
+      menu.addEventListener('click', function(e) {
+        nav.classList.toggle('hide-mobile');
+        e.preventDefault();
+      });
+
+      exit.addEventListener('click', function(e) {
+        nav.classList.add('hide-mobile');
+        e.preventDefault();
+      });
+
+    </script>
+
 
   </body>
 </html>
