@@ -23,8 +23,7 @@ ul {
 }
 
 .logo {
-  width: 60px;
-  padding: 10px;
+  margin: -12px;
 }
 
 header {
@@ -96,7 +95,6 @@ h1 {
 
 .orange-container {
   width: 100%;
-  background: #ffa500;
   color: #fff;
   padding: 2em 0 2em;
 }
@@ -106,7 +104,13 @@ h1 {
 }
 
 .orange-container li {
+  box-shadow: -1px 15px 45px 4px rgba(255,118,57,0.36);
+  border-radius: 5%;
+  padding: 1.5em;
+  margin-right: 2.5em;
+  margin-left: 2.5em;
   margin-bottom: 4em;
+  background-image: linear-gradient(to right, #ff4744 , #ff7639);
 }
 
 .icon {
@@ -263,11 +267,15 @@ nav ul li a:hover{
     display: flex;
     align-items: center;
     margin-bottom: -2em;
-    padding: 0.3em;
+    padding: 0;
+  }
+
+  .orange-container li {
+    margin-right: 1em;
+    margin-left: 1em;
   }
 
   .orange-container ul li p {
-    padding: 0 1.5em;
     font-size: .8em;
   }
 
@@ -300,7 +308,12 @@ nav ul li a:hover{
     }
 
     .orange-container li {
-      padding: 0 1.5em;
+      margin-right: 1.5em;
+      margin-left: 1.5em;
+    }
+
+    .orange-container li p {
+      line-height: 1.3em;
     }
 
     .gray-container ul li img {
@@ -319,6 +332,12 @@ nav ul li a:hover{
   }
 
   @media only screen and (min-width: 1024px) {
+
+    .orange-container li {
+      margin-right: 1.5em;
+      margin-left: 1.5em;
+      padding: 2em 0;
+    }
 
     .cta {
       width: 30%;
